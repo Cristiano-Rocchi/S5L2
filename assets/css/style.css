@@ -403,6 +403,8 @@ footer a {
     right: 0;
     left: 0;
     z-index: 99;
+    margin-left: 0.8em;
+    margin-right: 0.8em;
   }
   main {
     margin-top: 230px;
