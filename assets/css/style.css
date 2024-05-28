@@ -380,8 +380,26 @@ footer a {
   ol {
     font-size: 1rem;
   }
+  svg {
+    position: relative;
+    bottom: 39px;
+  }
+  h1 {
+    z-index: 9;
+    position: relative;
+  }
+  #underlineDiv {
+    margin-bottom: -2rem;
+  }
+  article p:first-of-type {
+    opacity: 0.3;
+  }
+  #logoDiv p {
+    opacity: unset;
+  }
 }
 
+/* fine modifiche */
 @media print {
   body {
     font-size: 24px;
