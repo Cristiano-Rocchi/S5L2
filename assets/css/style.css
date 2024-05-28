@@ -409,6 +409,21 @@ footer a {
   main {
     margin-top: 230px;
   }
+  #novita {
+    position: relative;
+  }
+  section h2 {
+    position: absolute;
+    text-transform: uppercase;
+
+    width: 120px;
+    height: 35px;
+    top: 0;
+    transform: translate(0, -50%);
+    border-radius: 2px;
+    border-bottom: solid 1px #807f7f;
+    border-right: solid 1px #807f7f;
+  }
 }
 
 /* fine modifiche */
