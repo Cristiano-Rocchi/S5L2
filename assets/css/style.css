@@ -366,6 +366,9 @@ footer a {
 }
 /* modifiche mie */
 @media screen and (min-width: 500px) {
+  body {
+    position: relative;
+  } /* quiiiiiiiiiii */
   h1 {
     font-size: 2.5rem;
   }
@@ -383,6 +386,7 @@ footer a {
   #underlineDiv svg {
     position: relative;
     bottom: 39px;
+    opacity: 0.4;
   }
   h1 {
     z-index: 9;
@@ -394,6 +398,142 @@ footer a {
   article p:first-of-type {
     opacity: 0.3;
   }
+  #logoDiv p {
+    opacity: unset;
+  }
+  header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 99;
+    margin-left: 0.8em;
+    margin-right: 0.8em;
+  }
+  main {
+    margin-top: 230px;
+  }
+  #novita {
+    position: relative;
+  }
+  section h2 {
+    position: absolute;
+    text-transform: uppercase;
+
+    width: 120px;
+    height: 35px;
+    top: 0;
+    transform: translate(0, -50%);
+    border-radius: 2px;
+    border-bottom: solid 1px #807f7f;
+    border-right: solid 1px #807f7f;
+  }
+
+  footer {
+    position: relative;
+  }
+  #svgArrow {
+    background-color: rgba(155, 155, 155, 0.5);
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    z-index: 99;
+    border: solid 3px white;
+    border-radius: 10px;
+    right: -11px;
+    bottom: 20px;
+  }
+  #svgArrow svg {
+    height: 20px;
+    border: solid;
+    position: absolute;
+    padding: auto;
+    inset: 0;
+    margin: auto;
+    color: #f65e5e;
+  }
+  #svgArrow svg path {
+    fill: #f65e5e;
+  }
+  #svgCalendar {
+    background-color: rgba(155, 155, 155, 0.5);
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    z-index: 99;
+    border: solid 3px white;
+    border-radius: 10px;
+    right: -11px;
+    bottom: 90px;
+  }
+  #svgCalendar svg {
+    height: 30px;
+
+    position: absolute;
+    padding: auto;
+    inset: 0;
+    margin: auto;
+    color: #105db1;
+  }
+  #svgCalendar svg path {
+    fill: #105db1;
+  }
+  #svgPlus {
+    background-color: rgba(155, 155, 155, 0.5);
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    z-index: 99;
+    border: solid 3px white;
+    border-radius: 10px;
+
+    right: -11px;
+    bottom: 159px;
+  }
+  #svgPlus svg {
+    height: 20px;
+    border: solid;
+    position: absolute;
+    padding: auto;
+    inset: 0;
+    margin: auto;
+    color: #105db1;
+  }
+  #svgPlus svg path {
+    fill: #105db1;
+  }
+}
+@media screen and (min-width: 700px) {
+  h1 {
+    font-size: 3rem;
+  }
+  #logoDiv {
+    display: flow-root;
+  }
+  #logoDiv img {
+    float: left;
+  }
+  p,
+  ul,
+  ol {
+    font-size: 1rem;
+  }
+  #underlineDiv svg {
+    position: relative;
+    bottom: 39px;
+    opacity: 0.4;
+  }
+  h1 {
+    z-index: 9;
+    position: relative;
+  }
+  #underlineDiv {
+    margin-bottom: -2rem;
+  }
+  article p:first-of-type {
+    opacity: 0.3;
+  }
+
   #logoDiv p {
     opacity: unset;
   }
@@ -501,7 +641,6 @@ footer a {
     fill: #f65e5e;
   }
 }
-
 /* fine modifiche */
 @media print {
   body {
