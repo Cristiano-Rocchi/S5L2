@@ -380,7 +380,7 @@ footer a {
   ol {
     font-size: 1rem;
   }
-  svg {
+  #underlineDiv svg {
     position: relative;
     bottom: 39px;
   }
@@ -423,6 +423,29 @@ footer a {
     border-radius: 2px;
     border-bottom: solid 1px #807f7f;
     border-right: solid 1px #807f7f;
+  }
+  #svgArrow {
+    background-color: rgba(155, 155, 155, 0.5);
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    z-index: 99;
+    border: solid 3px white;
+    border-radius: 10px;
+    right: 0;
+    bottom: 0;
+  }
+  #svgArrow svg {
+    height: 20px;
+    border: solid;
+    position: absolute;
+    padding: auto;
+    inset: 0;
+    margin: auto;
+    color: #f65e5e;
+  }
+  #svgArrow svg path {
+    fill: #f65e5e;
   }
 }
 
