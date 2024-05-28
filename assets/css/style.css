@@ -424,16 +424,21 @@ footer a {
     border-bottom: solid 1px #807f7f;
     border-right: solid 1px #807f7f;
   }
+
+  footer {
+    position: relative;
+  }
   #svgArrow {
     background-color: rgba(155, 155, 155, 0.5);
     height: 50px;
     width: 50px;
-    position: fixed;
+    position: absolute;
     z-index: 99;
     border: solid 3px white;
     border-radius: 10px;
     right: 0;
     bottom: 0;
+    transform: translate(50%);
   }
   #svgArrow svg {
     height: 20px;
@@ -445,6 +450,54 @@ footer a {
     color: #f65e5e;
   }
   #svgArrow svg path {
+    fill: #f65e5e;
+  }
+  #svgCalendar {
+    background-color: rgba(155, 155, 155, 0.5);
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    z-index: 99;
+    border: solid 3px white;
+    border-radius: 10px;
+    top: 40%;
+    right: 0;
+    transform: translate(50%);
+  }
+  #svgCalendar svg {
+    height: 30px;
+
+    position: absolute;
+    padding: auto;
+    inset: 0;
+    margin: auto;
+    color: #105db1;
+  }
+  #svgCalendar svg path {
+    fill: #105db1;
+  }
+  #svgPlus {
+    background-color: rgba(155, 155, 155, 0.5);
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    z-index: 99;
+    border: solid 3px white;
+    border-radius: 10px;
+    top: 8px;
+    right: 0;
+    transform: translate(50%);
+  }
+  #svgPlus svg {
+    height: 20px;
+    border: solid;
+    position: absolute;
+    padding: auto;
+    inset: 0;
+    margin: auto;
+    color: #f65e5e;
+  }
+  #svgPlus svg path {
     fill: #f65e5e;
   }
 }
